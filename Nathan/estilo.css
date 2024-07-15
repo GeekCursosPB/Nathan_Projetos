@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex">
+
+    <title>Portal de Ensino</title>
+
+    <link rel="icon" href="https://files-private.estudaronline.com.br/ava/Assets/Img/Tema/Franqueadora/Evolua/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" href="https://files-private.estudaronline.com.br/ava/Assets/Img/Tema/Franqueadora/Evolua/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://files-private.estudaronline.com.br/ava/Assets/Img/Tema/Franqueadora/Evolua/favicon/favicon-48x48.png" sizes="48x48">
+    <link rel="icon" href="https://files-private.estudaronline.com.br/ava/Assets/Img/Tema/Franqueadora/Evolua/favicon/favicon-64x64.png" sizes="64x64">
+    <link rel="icon" href="https://files-private.estudaronline.com.br/ava/Assets/Img/Tema/Franqueadora/Evolua/favicon/favicon-96x96.png" sizes="96x96">
+
+    <link href="https://staticfiles.evoluaeducacao.com.br/ava-current/wwwroot/css/material-form.min.css")" rel="stylesheet" />
+    <link href="https://staticfiles.evoluaeducacao.com.br/ava-current/wwwroot/cssMin/content.min.css" rel="stylesheet" />
+
+    <script src="https://staticfiles.evoluaeducacao.com.br/ava-current/wwwroot/lib/jquery/dist/jquery.min.js")"></script>
+    <script src="https://staticfiles.evoluaeducacao.com.br/ava-current/wwwroot/jsMin/modernizr.min.js"></script>
+    <script src="https://staticfiles.evoluaeducacao.com.br/ava-current/wwwroot/js/popper.min.js"></script>
+    <script src="https://staticfiles.evoluaeducacao.com.br/ava-current/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://staticfiles.evoluaeducacao.com.br/ava-current/wwwroot/js/materialize.min.js"></script>
+    <script src="https://staticfiles.evoluaeducacao.com.br/ava-current/wwwroot/jsMin/toastr.min.js"></script>
+
+    <style>
+        body {
+            background-color: #1e273b;
+        }
+    </style>
+
+
+    <style>
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+            -webkit-transition-delay: 9999s;
+            -moz-transition-delay: 9999s;
+            -o-transition-delay: 9999s;
+            transition-delay: 9999s;
+            -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+            -moz-transition: color 9999s ease-out, background-color 9999s ease-out;
+            -o-transition: color 9999s ease-out, background-color 9999s ease-out;
+            transition: color 9999s ease-out, background-color 9999s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="hidden" id="success" />
+    <input type="hidden" id="info" />
+    <input type="hidden" id="warning" />
+    <input type="hidden" id="error" />
+
+    <div class="container-login">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-sm-12 col-md-12">
+                    <div class="row justify-content-md-center logo-margem-superior mb-5">
+                        <div class="col col-md-12">
+                            <div class="d-flex justify-content-center">
+                                <img class="logo-login" src=https://files-private.estudaronline.com.br/ava/Assets/Img/Tema/Franqueadora/Evolua/LogoDirBrancoPadrao.png />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-sm-12 col-md-12">
+<form action="/" method="post">                        <div class="row justify-content-md-center">
+                            <div class="col col-md-8 mb-1">
+                                <div class="input-field">
+                                    <i class="material-icons prefix active">perm_identity</i>
+
+                                    <input autocomplete="off" autofocus="autofocus" id="Login" name="Login" type="text" value="" />
+
+                                    <label for="Login">Usu&#xE1;rio:</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col col-md-8 mb-1">
+                                <div class="input-field">
+                                    <i class="material-icons prefix">lock_outline</i>
+
+                                    <input id="Senha" name="Senha" type="password" />
+
+                                    <label for="Senha">Senha:</label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col col-md-12 mt-5 mb-4 col-xl-12 col-sm-12">
+                                <div class="d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-success btn-login btn-padrao">Entrar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col col-md-12">
+                                <div class="d-flex justify-content-center">
+                                    <a class="btn btn-link" href="/Login/EsqueciSenha">Esqueceu sua senha?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col col-md-12">
+                                <div class="d-flex justify-content-center">
+<a class="btn btn-link" href="/Login/Cadastro">Tenho um voucher</a>                                </div>
+                            </div>
+                        </div>
+                            <div class="row justify-content-md-center">
+                                <div class="col col-md-12">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://conteudo.estudaronline.com.br/TermosPoliticas/ENTER/TermoDeUsoPoliticaDePrivacidade_18.06.2021_ENTER.html" class="btn btn-link" target="_blank">Termos de Uso e Pol&#xED;tica de Privacidade</a>
+                                    </div>
+                                </div>
+                            </div>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8IU-AiU5SCRDhSTqjogus291NBTokAoyomoZAjAbju2n8p9c3wjt3i4fiMUiBQYV26VVOSuasip7YjCocoiYTPd60aq_jufvuEN57JIquV-FUdtIN-WZhKGKz070hHXX8RTY-21Bcw4tEIwLUBMXsPU" /></form>                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <script>
+        localStorage.setItem("libera-atividade", false);
+    </script>
+
+</body>
+</html>
